@@ -1,7 +1,7 @@
 var x;
 var url;
 function changeUI() {
-    document.getElementById("thank-you").style.visibility = "visibile";
+    document.getElementById("thank-you").style.display = "block";
 }
 function sendResult() {
     var xhttp = new XMLHttpRequest();
