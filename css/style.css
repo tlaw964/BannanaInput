@@ -1,5 +1,5 @@
 html { 
-    background: darkorange; 
+    background: url("../pictures/Bannana.gif") no-repeat center center fixed;; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -9,6 +9,17 @@ html {
 body {
     color: white;
     background-color: transparent;
+}
+
+form {
+    
+    color:black;
+    background-color: transparent;
+
+}
+
+input#button{
+    
 }
 
 h1#app-name {
@@ -30,6 +41,10 @@ img#selected-img{
 h2#page-header {
     padding-top:20px;
     padding-bottom:20px;
+}
+
+h3#thank-you {
+    display:none;
 }
 
 body #page-container {

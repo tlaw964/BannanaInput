@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Bannana Input</title>
+        <title>Banana Input</title>
         <!--Boostrap's CSS-->
         <link rel="stylesheet" type="text/css" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
         <!--Custom CSS-->
@@ -12,29 +12,24 @@
     <body>
         <div class="container" id="page-container">
             <h1 id="app-name">
-                <span class="glyphicon glyphicon-bannana"></span> Community Bannana Scale 
+                <span class="glyphicon glyphicon-bannana"></span> The Banana Scale Project 
             </h1>
             
             <h2 id="page-header">
-                Help standardise the first conversationaly generated scale.
+                Help define the community owned, accessible and delicious scale 
             </h2>
-        <form  id="form" method="GET" accept-charset="UTF-8">
-        <input type="number" name="banana Length" placeholder="length mm">
-        <input type="submit" value="submit" onclick="sendResult()"/>
+
+            <h5 id="page-header">
+                Please enter in mm the straight lengths of bananas from tip to tip  
+            </h5>
+        <form  class="form-inline" id="form" accept-charset="UTF-8" onSubmit="sendResult()">
+        <input type="number" class="form-control" name="bananaLength" placeholder="length mm" min=0 required>
+        <button type="submit" class="btn btn-default">Submit</button>
         </form>
         
-        <script>
-        function sendResult() {
-        var xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-            if (this.readyState == 4 && this.status == 200) {
-            //document.getElementById("demo").innerHTML = this.responseText;
-            }
-        };
-        xhttp.open("GET", "https://script.google.com/macros/s/AKfycbwD3lp3-96GlSbuHj4c5ICSn8ij9UIgU2sKZ1b9XXpJU8V0w23z/exec", true);
-        xhttp.send();
-        }
-        </script>
+        <h3 id="thank-you">
+                Thanks you. You responce will help give the banana scale.
+        </h3>
 
         <!--jQuery Script-->
         <script src="./node_modules/jquery/dist/jquery.min.js"></script>
